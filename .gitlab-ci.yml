@@ -2,8 +2,7 @@ before_script:
   - export GO_PROJECT_NAMESPACE="$GOPATH/src/gitlab-ci-demo/"
   - echo $GO_PROJECT_NAMESPACE
   - mkdir -p $GO_PROJECT_NAMESPACE
-  - echo $GO_PROJECT_PATH
-  - cd $GO_PROJECT_PATH
+  - cd GO_PROJECT_NAMESPACE
 
 stages:
   - build
