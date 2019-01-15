@@ -1,11 +1,6 @@
 before_script:
   - export GO_PROJECT_NAMESPACE="$GOPATH/src/gitexample.com/$CI_PROJECT_NAMESPACE"
   - echo $GO_PROJECT_NAMESPACE
-  - mkdir -p $GO_PROJECT_NAMESPACE
-  - ln -srf $(pwd) $GO_PROJECT_NAMESPACE
-  - export GO_PROJECT_PATH="$GO_PROJECT_NAMESPACE/$CI_PROJECT_NAME"
-  - echo $GO_PROJECT_PATH
-  - cd $GO_PROJECT_PATH
 
 stages:
   - build
@@ -14,9 +9,9 @@ stages:
 build:
   stage: build
   script:
-    - go build
+    - echo $PATH
   
 test:
   stage: test
   script:
-    - go test -v ./config
+    - echo $GOPATH
