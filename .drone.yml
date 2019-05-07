@@ -2,8 +2,16 @@ kind: pipeline
 name: default
 
 steps:
+- name: ping
+  image: redis
+  commands:
+  - redis-cli -h cache ping
 - name: test
   image: golang
   commands:
   - go get
   - go test
+
+services:
+- name: cache
+  image: redis
