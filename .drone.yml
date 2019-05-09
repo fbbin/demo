@@ -17,6 +17,13 @@ steps:
   - go test
   - go build -o fbbin
 
+- name: publish  
+  image: plugins/gh-pages
+  settings:
+    username: fbbin
+    password: binbin19891117
+    pages_directory: public/
+    
 services:
 - name: cache
   image: redis
