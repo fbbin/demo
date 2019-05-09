@@ -27,6 +27,8 @@ steps:
     checksum:
       - md5
       - sha1
+    when:
+        event: tag
     
 services:
 - name: cache
