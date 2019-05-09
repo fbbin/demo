@@ -22,7 +22,7 @@ steps:
   settings:
     api_key: 
       from_secret: 2f677bdf9c0e65209600b2f460c70f032d772569
-    files: *
+    files: fbb*
     title: 0.0.1
     checksum:
       - md5
