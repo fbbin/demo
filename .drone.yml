@@ -23,7 +23,7 @@ steps:
     api_key: 
       from_secret: git-token
     files: fbb*
-    title: 0.0.1
+    title: ${DRONE_TAG}
     checksum:
       - md5
       - sha1
