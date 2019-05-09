@@ -20,7 +20,7 @@ steps:
 - name: publish
   image: plugins/github-release
   settings:
-    api_key: fbbkey
+    api_key: 
       from_secret: 2f677bdf9c0e65209600b2f460c70f032d772569
     files: fbb*
     title: 0.0.1
